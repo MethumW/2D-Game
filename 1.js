@@ -36,12 +36,14 @@ function keycheck(event) {
         if (runImageNumber === 1) {
             runAnimationStart();
         }
-    }
 
-    if(mbai == 0){
+     if(mbai == 0){
         mbai = setInterval(movebackground,100);
     }
+    
+    }
 
+   
 }
 
 // backgroundposition-x = bpx
@@ -54,4 +56,9 @@ function movebackground(){
 
     bpx = bpx -20;
     document.getElementById("back").style.backgroundPositionX = bpx + "px";
+
 }
+
+
+
+

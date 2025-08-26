@@ -33,8 +33,24 @@ function runAnimationStart() {
 function keycheck(event) {
     var keycode = event.which;
     if (keycode == 13) {
-        if (runAnimationInterval === 0) {
+        if (runImageNumber === 1) {
             runAnimationStart();
         }
     }
+
+    if(mbai == 0){
+        mbai = setInterval(movebackground,100);
+    }
+
+}
+
+
+var bpx =0;
+var mbai =0;
+
+
+function movebackground(){
+
+    bpx = bpx -20;
+    document.getElementById("back").style.backgroundPositionX = bpx + "px";
 }

@@ -44,7 +44,8 @@ function keycheck(event) {
 
 }
 
-
+// backgroundposition-x = bpx
+// movebackgroundanimationid = mbai
 var bpx =0;
 var mbai =0;
 

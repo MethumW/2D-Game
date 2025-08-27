@@ -66,6 +66,7 @@ let jumpImageNumber = 1;
 let jumpAnimationNumber = 0;
 roboMarginTop = 500;
 
+
 function jumpAnimation() {
     robo.src = "resources/Jump (" + jumpImageNumber + ").png";
     jumpImageNumber++;
@@ -73,6 +74,8 @@ function jumpAnimation() {
 if (jumpImageNumber <=6){
     roboMarginTop = roboMarginTop -15;
     robo.style.marginTop = roboMarginTop + "px";
+    robo.style.marginTop = 200 + "px";
+
 }
 
 if(jumpImageNumber >= 7 && jumpImageNumber <= 10){
